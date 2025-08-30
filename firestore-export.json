@@ -1,30 +1,31 @@
 {
-  "about": {
-    "content":{
-  "title": {
-    "es": "Sobre mí",
-    "en": "About Me"
-  },
-  "p1": {
-    "es": "Soy desarrollador Full Stack con experiencia en React, Node.js y Firebase.",
-    "en": "I am a Full Stack developer with experience in React, Node.js, and Firebase."
-  },
-  "p2": {
-    "es": "Me apasiona construir aplicaciones modernas y funcionales.",
-    "en": "I am passionate about building modern and functional applications."
-  },
-  "p3": {
-    "es": "Actualmente busco desafíos en entornos dinámicos.",
-    "en": "I am currently seeking challenges in dynamic environments."
-  }
-} }
+   "about": {
+    "content": {
+      "title": {
+        "es": "Sobre mí",
+        "en": "About Me"
+      },
+      "p1": {
+        "es": "Soy Desarrollador Full Stack con formación técnica en programación (UTN) y experiencia en la creación de sitios web dinámicos y escalables. Mi pasión es resolver problemas complejos, optimizar procesos y ofrecer soluciones con una excelente experiencia de usuario.",
+        "en": "I am a Full Stack Developer with a technical degree in programming (UTN) and experience in building dynamic and scalable websites. My passion is solving complex problems, optimizing processes, and delivering solutions that provide an excellent user experience."
+      },
+      "p2": {
+        "es": "Me especializo en el desarrollo front y back-end con tecnologías como HTML, CSS, JavaScript, React, PHP y MySQL. Trabajo bajo metodologías ágiles y disfruto colaborar en equipos distribuidos.",
+        "en": "I specialize in front-end and back-end development using technologies such as HTML, CSS, JavaScript, React, PHP, and MySQL. I work under agile methodologies and enjoy collaborating in distributed teams."
+      },
+      "p3": {
+        "es": "Mi objetivo es seguir creciendo profesionalmente en entornos remotos, desarrollando productos digitales eficientes y escalables para empresas globales.",
+        "en": "My goal is to continue growing professionally in remote environments, building efficient and scalable digital products for global companies."
+      }
+    }
+  } 
 ,
   "projects": {
     "mito": {
       "order": 1,
       "title_es": "MITO Gafas",
       "title_en": "MITO Glasses",
-      "img": "https://placehold.co/600x400/5eead4/000?text=MITO+Glasses+Project",
+      "img": "./imagenes/@mitogafas.png",
       "link": "https://mitogafas.com",
       "github": "https://github.com/nachom1833/mitogafas",
       "description_es": "Desarrollo de un e-commerce para ópticas con catálogo dinámico, filtros por categoría, integración de base de datos MySQL y diseño responsive. Incluye soporte continuo y carga masiva de productos.",
