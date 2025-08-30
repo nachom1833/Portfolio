@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+node_modules/
+dist/
+.env.local
+serviceAccount.json
+.env
+.env.*.local
+
+
+# Firebase cache
+.firebase/
+serviceAccount.json
+firebase-debug.log
+firebase-errors.log
+.firebaserc
+
+

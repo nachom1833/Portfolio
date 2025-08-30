@@ -17,6 +17,7 @@
     "firebase": "^12.1.0",
     "firebase-admin": "^13.5.0",
     "framer-motion": "^12.23.12",
+    "git-filter-repo": "^0.0.30",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-html-props": "^2.1.1",
