@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { db } from "../firebase/config";
-import { collection, onSnapshot, DocumentData } from "firebase/firestore";
+import { collection, onSnapshot } from "firebase/firestore";
 import { useAppContext } from "../context/AppContext";
+import type { DocumentData } from "firebase/firestore";
 
 // Define la interfaz para un item de habilidad
 interface SkillItem {

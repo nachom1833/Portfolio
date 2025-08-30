@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useAppContext } from "../context/AppContext";
-import { SunIcon, MoonIcon, GlobeAltIcon } from "@heroicons/react/24/solid";
+import {/* SunIcon, MoonIcon, */GlobeAltIcon } from "@heroicons/react/24/solid";
 
 export default function Navbar() {
-  const { theme, toggleTheme, language, setLanguage } = useAppContext();
+  const {/* theme, toggleTheme, */language, setLanguage } = useAppContext();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleLanguage = () => {

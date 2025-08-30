@@ -23,10 +23,6 @@ export default function Hero() {
     },
   };
 
-  const fadeUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-  };
 
   return (
     <section
@@ -41,7 +37,7 @@ export default function Hero() {
       >
         {/* Nombre */}
         <motion.h1
-          variants={fadeUp}
+          variants={containerVariants}
           className="text-4xl md:text-6xl font-extrabold mb-4 text-gray-900 dark:text-white tracking-tight"
         >
           Ignacio Orco Barberis
@@ -49,7 +45,7 @@ export default function Hero() {
 
         {/* Rol */}
         <motion.h2
-          variants={fadeUp}
+          variants={containerVariants}
           className="text-2xl md:text-3xl text-teal-500 dark:text-teal-400 mb-8 font-semibold"
         >
           {language === "es" ? "Desarrollador Full Stack" : "Full Stack Developer"}
@@ -57,7 +53,7 @@ export default function Hero() {
 
         {/* Botones */}
         <motion.div
-          variants={fadeUp}
+          variants={containerVariants}
           className="flex flex-col md:flex-row gap-4 mt-6"
         >
           {/* Botón Proyectos */}

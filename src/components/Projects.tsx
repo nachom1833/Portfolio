@@ -25,16 +25,13 @@ export default function Projects() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // 🔹 Obtener proyectos de Firestore en tiempo real
   useEffect(() => {
-    // Referencia a la colección 'projects'
     const colRef = collection(db, "projects");
+    const q = query(colRef, orderBy("order", "asc")); 
 
-    // Configura el listener de tiempo real con onSnapshot
     const unsubscribe = onSnapshot(
-      colRef,
+      q,
       (snapshot) => {
-        // Mapea los documentos de Firestore a la interfaz ProjectItem
         const data: ProjectItem[] = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...(doc.data() as Omit<ProjectItem, "id">),
@@ -49,9 +46,12 @@ export default function Projects() {
       }
     );
 
-    // Limpia el listener cuando el componente se desmonte
     return () => unsubscribe();
   }, []);
+
+
+
+  // Limpia el listener cuando el componente se desmonte
 
   return (
     <section id="projects" className="py-20 px-4 bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
