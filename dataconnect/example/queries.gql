@@ -1,0 +1,35 @@
+mutation CreateUser @auth(level: PUBLIC) {
+  user_insert(data: {
+    displayName: "New User",
+    email: "newuser@example.com"
+  })
+}
+
+query ListPublicMovieLists @auth(level: PUBLIC) {
+  movieLists(where: {isPublic: {eq: true}}) {
+    id
+    name
+    description
+  }
+}
+
+query GetMyWatches @auth(level: USER) {
+  watches(where: {userId: {eq_expr: "auth.uid"}}) {
+    id
+    movie {
+      id
+      title
+    }
+    watchDate
+    location
+  }
+}
+
+mutation AddMovieToList($movieListId: UUID!, $movieId: UUID!, $note: String) @auth(level: USER) {
+  movieListEntry_insert(data: {
+    movieListId: $movieListId,
+    movieId: $movieId,
+    note: $note,
+    position: 0 # You might want to implement a way to determine the position
+  })
+}

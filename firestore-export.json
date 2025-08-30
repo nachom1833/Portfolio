@@ -1,0 +1,168 @@
+{
+  "about": {
+    "content": {
+      "title": {
+        "es": "Sobre mí",
+        "en": "About Me"
+      },
+      "p1": {
+        "es": "Soy Desarrollador Full Stack con formación técnica en programación (UTN) y experiencia en la creación de sitios web dinámicos y escalables. Mi pasión es resolver problemas complejos, optimizar procesos y ofrecer soluciones con una excelente experiencia de usuario.",
+        "en": "I am a Full Stack Developer with a technical degree in programming (UTN) and experience in building dynamic and scalable websites. My passion is solving complex problems, optimizing processes, and delivering solutions that provide an excellent user experience."
+      },
+      "p2": {
+        "es": "Me especializo en el desarrollo front y back-end con tecnologías como HTML, CSS, JavaScript, React, PHP y MySQL. Trabajo bajo metodologías ágiles y disfruto colaborar en equipos distribuidos.",
+        "en": "I specialize in front-end and back-end development using technologies such as HTML, CSS, JavaScript, React, PHP, and MySQL. I work under agile methodologies and enjoy collaborating in distributed teams."
+      },
+      "p3": {
+        "es": "Mi objetivo es seguir creciendo profesionalmente en entornos remotos, desarrollando productos digitales eficientes y escalables para empresas globales.",
+        "en": "My goal is to continue growing professionally in remote environments, building efficient and scalable digital products for global companies."
+      }
+    }
+  },
+  "projects": {
+    "mito": {
+      "title_es": "MITO Gafas",
+      "title_en": "MITO Glasses",
+      "img": "https://placehold.co/600x400/5eead4/000?text=MITO+Glasses+Project",
+      "link": "https://mitogafas.com",
+      "github": "https://github.com/nachom1833/mitogafas",
+      "description_es": "Desarrollo de un e-commerce para ópticas con catálogo dinámico, filtros por categoría, integración de base de datos MySQL y diseño responsive. Incluye soporte continuo y carga masiva de productos.",
+      "description_en": "Development of an e-commerce platform for optical stores with a dynamic catalog, category filters, MySQL database integration, and responsive design. Includes continuous support and bulk product upload.",
+      "techs": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "Bootstrap"
+      ]
+    },
+    "ejemplo-proyecto-1": {
+      "title_es": "Portafolio Personal",
+      "title_en": "Personal Portfolio",
+      "description_es": "Mi portafolio personal, donde muestro mis habilidades y proyectos. Construido con React y optimizado con Firebase para una gestión de contenido eficiente.",
+      "description_en": "My personal portfolio, where I showcase my skills and projects. Built with React and optimized with Firebase for efficient content management.",
+      "img": "/images/portfolio-preview.jpg",
+      "link": "https://tu-portfolio.com",
+      "github": "https://github.com/tu-usuario/tu-repositorio",
+      "techs": [
+        "React",
+        "TailwindCSS",
+        "Firebase",
+        "TypeScript"
+      ]
+    },
+    "calzados": {
+      "title_es": "Calzados Florencia",
+      "title_en": "Florencia Shoes",
+      "img": "https://placehold.co/600x400/ffa07a/000?text=Calzados+Florencia",
+      "link": "https://calzadoflorencia.mitiendanube.com",
+      "github": "",
+      "description_es": "Configuración y personalización de e-commerce en TiendaNube, gestión de inventario y diseño adaptable. Se implementaron estrategias digitales para aumentar la visibilidad online.",
+      "description_en": "Configuration and customization of an e-commerce platform on TiendaNube, inventory management, and responsive design. Implemented digital strategies to increase online visibility.",
+      "techs": [
+        "TiendaNube",
+        "HTML",
+        "CSS"
+      ]
+    },
+    "academic": {
+      "title_es": "Proyectos Académicos",
+      "title_en": "Academic Projects",
+      "img": "https://placehold.co/600x400/c0c0c0/000?text=Academic+Projects",
+      "link": "",
+      "github": "https://github.com/nachom1833",
+      "description_es": "Aplicaciones web desarrolladas en la UTN utilizando Java, PHP y MySQL, aplicando arquitectura MVC y metodologías ágiles.",
+      "description_en": "Web applications developed at UTN using Java, PHP, and MySQL, applying MVC architecture and agile methodologies.",
+      "techs": [
+        "Java",
+        "PHP",
+        "MySQL",
+        "MVC"
+      ]
+    }
+  },
+  "skills": {
+    "frontend": {
+      "HTML5": 95,
+      "CSS3": 90,
+      "JavaScript (ES6+)": 85,
+      "React": 75
+    },
+    "backend": {
+      "PHP": 80,
+      "Java": 70,
+      "Node.js": 60
+    },
+    "databases": {
+      "MySQL": 85,
+      "SQL Server": 70,
+      "Firebase": 65
+    },
+    "tools": {
+      "Git": 90,
+      "Docker": 60,
+      "LAMP Stack": 80
+    }
+  },
+  "experiences": {
+    "freelanceMito": {
+      "title_es": "Desarrollador Full Stack",
+      "title_en": "Full Stack Developer",
+      "company": "MITO Gafas",
+      "period": "Oct 2024 – Presente",
+      "description_es": "Diseño y desarrollo del sitio e-commerce con PHP, MySQL, JavaScript y Bootstrap. Implementación de filtros dinámicos, carga masiva de productos y mantenimiento continuo.",
+      "description_en": "Design and development of the e-commerce website using PHP, MySQL, JavaScript, and Bootstrap. Implemented dynamic filters, bulk product upload, and continuous maintenance."
+    },
+    "calzadosFlorencia": {
+      "title_es": "Asistente Comercial & Digital",
+      "title_en": "Commercial & Digital Assistant",
+      "company": "Calzados Florencia",
+      "period": "Feb 2025 – Presente",
+      "description_es": "Gestión de e-commerce, carga de productos y soporte digital. Implementación de campañas online para mejorar la presencia de marca.",
+      "description_en": "Managed e-commerce, product upload, and digital support. Implemented online campaigns to enhance brand visibility."
+    },
+    "academic": {
+      "title_es": "Proyectos Académicos",
+      "title_en": "Academic Projects",
+      "company": "Universidad Técnica Nacional",
+      "period": "2021 – 2024",
+      "description_es": "Desarrollo de aplicaciones web bajo arquitectura MVC y metodologías ágiles, utilizando Java, PHP y MySQL.",
+      "description_en": "Developed web applications using MVC architecture and agile methodologies, working with Java, PHP, and MySQL."
+    }
+  },
+  "contact_content": {
+    "es": {
+      "lang": "es",
+      "title": "Contacto",
+      "subtitle": "Estoy abierto a nuevas oportunidades de trabajo. Si tienes un proyecto en mente o simplemente quieres saludar, no dudes en contactarme.",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo Electrónico",
+        "message": "Mensaje",
+        "send": "Enviar",
+        "sending": "Enviando..."
+      },
+      "status": {
+        "success": "¡Mensaje enviado con éxito!",
+        "error": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
+      }
+    },
+    "en": {
+      "lang": "en",
+      "title": "Contact",
+      "subtitle": "I am open to new work opportunities. If you have a project in mind or just want to say hello, feel free to get in touch.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "sending": "Sending..."
+      },
+      "status": {
+        "success": "Message sent successfully!",
+        "error": "There was an error sending the message. Please try again later."
+      }
+    }
+  }
+}
