@@ -24,7 +24,7 @@ useEffect(() => {
     const colRef = collection(db, "experiences");
 
     // Construye la consulta para ordenar por título descendente
-    const q = query(colRef, orderBy("company", "desc"));
+    const q = query(colRef, orderBy("order", "asc"));
 
     // Ahora, onSnapshot escuchará los resultados ordenados
     const unsubscribe = onSnapshot(
