@@ -1,79 +1,81 @@
 import { motion } from "framer-motion";
 import { useAppContext } from "../context/AppContext";
-import { useMemo } from "react";
-
-const MotionButton = motion.a;
 
 export default function Hero() {
   const { language } = useAppContext();
 
-  const cvPaths = useMemo(
-    () => ({
-      es: "../cvs/IgnacioOrcoBarberis_DesarrolladorFullStack_CV.pdf",
-      en: "../cvs/IgnacioOrcoBarberis_FullStackDeveloper_CV.pdf",
-    }),
-    []
-  );
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.3, delayChildren: 0.2 },
+  const content = {
+    es: {
+      greeting: "¡Hola! Soy",
+      name: "Ignacio Orco",
+      role: "Desarrollador Full Stack",
+      subtitle: "Creo soluciones web dinámicas, escalables y optimizadas.",
+      cv: "Descargar CV",
+      cvFile: "./cvs/IgnacioOrcoBarberis_DesarrolladorFullStack_CV.pdf"
     },
+    en: {
+      greeting: "Hi! I'm",
+      name: "Ignacio Orco",
+      role: "Full Stack Developer",
+      subtitle: "I build dynamic, scalable, and optimized web solutions.",
+      cv: "Download CV",
+      cvFile: "./cvs/IgnacioOrcoBarberis_FullStackDeveloper_CV.pdf"
+    }
   };
 
+  const lang = language === "es" ? content.es : content.en;
 
   return (
-    <section
-      id="hero"
-      className="min-h-screen flex flex-col justify-center items-center text-center bg-gray-50 dark:bg-gray-900 px-6 transition-colors duration-500"
-    >
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="flex flex-col items-center"
+    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-white dark:from-gray-900 to-gray-100 dark:to-gray-800">
+      <motion.h2
+        className="text-lg text-gray-600 dark:text-gray-300 mb-2"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
       >
-        {/* Nombre */}
-        <motion.h1
-          variants={containerVariants}
-          className="text-4xl md:text-6xl font-extrabold mb-4 text-gray-900 dark:text-white tracking-tight"
-        >
-          Ignacio Orco Barberis
-        </motion.h1>
+        {lang.greeting}
+      </motion.h2>
 
-        {/* Rol */}
-        <motion.h2
-          variants={containerVariants}
-          className="text-2xl md:text-3xl text-teal-500 dark:text-teal-400 mb-8 font-semibold"
-        >
-          {language === "es" ? "Desarrollador Full Stack" : "Full Stack Developer"}
-        </motion.h2>
+      <motion.h1
+        className="text-4xl md:text-6xl font-bold text-teal-600 dark:text-teal-400"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+      >
+        {lang.name}
+      </motion.h1>
 
-        {/* Botones */}
-        <motion.div
-          variants={containerVariants}
-          className="flex flex-col md:flex-row gap-4 mt-6"
-        >
-          {/* Botón Proyectos */}
-          <MotionButton
-            href="#projects"
-            className="bg-gradient-to-r from-teal-500 to-teal-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-          >
-            {language === "es" ? "Ver Proyectos" : "View Projects"}
-          </MotionButton>
+      <motion.h3
+        className="text-xl md:text-2xl font-medium text-gray-700 dark:text-gray-200 mt-3"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6, duration: 0.8 }}
+      >
+        {lang.role}
+      </motion.h3>
 
-          {/* Botón CV */}
-          <MotionButton
-            href={language === "es" ? cvPaths.es : cvPaths.en}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-2 border-teal-500 text-teal-500 dark:text-teal-400 font-bold py-3 px-8 rounded-full hover:bg-teal-500 hover:text-white transition-all duration-300"
-          >
-            {language === "es" ? "Descargar CV" : "Download CV"}
-          </MotionButton>
-        </motion.div>
+      <motion.p
+        className="max-w-2xl mt-4 text-gray-600 dark:text-gray-400"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.9, duration: 0.8 }}
+      >
+        {lang.subtitle}
+      </motion.p>
+
+      <motion.div
+        className="mt-6"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+      >
+        <a
+          href={lang.cvFile}
+          download
+          className="px-6 py-3 bg-teal-600 text-white font-semibold rounded-lg shadow hover:bg-teal-700 transition"
+        >
+          {lang.cv}
+        </a>
       </motion.div>
     </section>
   );
