@@ -16,7 +16,8 @@ export default function Goals() {
   const [goals, setGoals] = useState<Goals | null>(null);
 
   useEffect(() => {
-    const docRef = doc(db, "content", "goals");
+    // Corrige la ruta para apuntar a la colección 'goals' y al documento 'goals'
+    const docRef = doc(db, "goals", "content");
     const unsubscribe = onSnapshot(docRef, (snapshot) => {
       if (snapshot.exists()) {
         setGoals(snapshot.data() as Goals);

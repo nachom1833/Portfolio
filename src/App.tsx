@@ -28,16 +28,17 @@ function App() {
             <Hero />
           </motion.section>
 
-          {/* Experience */}
-          <motion.section id="experience" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <Experience />
-          </motion.section> 
-          
+
           {/* About */}
           <motion.section id="about" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <About />
           </motion.section>
 
+          {/* Experience */}
+          <motion.section id="experience" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+            <Experience />
+          </motion.section>
+          
           {/* Services */}
           <motion.section id="services" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Services />
@@ -71,7 +72,7 @@ function App() {
           {/* Contact */}
           <motion.section id="contact" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Contact />
-            <SocialLinks />
+            {/* <SocialLinks /> */}
           </motion.section>
 
         </Suspense>

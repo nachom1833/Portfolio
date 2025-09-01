@@ -13,9 +13,9 @@ interface SocialLinks {
 
 export default function SocialLinks() {
   const [links, setLinks] = useState<SocialLinks | null>(null);
+useEffect(() => {
 
-  useEffect(() => {
-    const docRef = doc(db, "content", "social_links");
+    const docRef = doc(db, "social_links", "links");
     const unsubscribe = onSnapshot(docRef, (snapshot) => {
       if (snapshot.exists()) {
         setLinks(snapshot.data() as SocialLinks);

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { db } from "../firebase/config";
-import { doc, onSnapshot } from "firebase/firestore";
+import { collection, onSnapshot } from "firebase/firestore";
 
 interface Certification {
   name: string;
@@ -13,12 +13,17 @@ export default function Certifications() {
   const [certifications, setCertifications] = useState<Certification[]>([]);
 
   useEffect(() => {
-    const docRef = doc(db, "content", "certifications");
-    const unsubscribe = onSnapshot(docRef, (snapshot) => {
-      if (snapshot.exists()) {
-        setCertifications(snapshot.data().items || []);
-      }
+    // Referencia a la colección, no a un documento
+    const colRef = collection(db, "certifications");
+
+    const unsubscribe = onSnapshot(colRef, (snapshot) => {
+      const loadedCertifications: Certification[] = snapshot.docs.map(doc => {
+        // Mapea cada documento a un objeto de certificación
+        return doc.data() as Certification;
+      });
+      setCertifications(loadedCertifications);
     });
+
     return () => unsubscribe();
   }, []);
 

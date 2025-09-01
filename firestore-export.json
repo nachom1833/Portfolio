@@ -112,6 +112,7 @@
     "freelanceMito": {
       "title_es": "Desarrollador Full Stack",
       "title_en": "Full Stack Developer",
+      "order": 1,
       "company": "MITO Gafas",
       "period": "Oct 2024 – Presente",
       "description_es": "Diseño y desarrollo del sitio e-commerce con PHP, MySQL, JavaScript y Bootstrap. Implementación de filtros dinámicos, carga masiva de productos y mantenimiento continuo.",
@@ -120,6 +121,7 @@
     "calzadosFlorencia": {
       "title_es": "Asistente Comercial & Digital",
       "title_en": "Commercial & Digital Assistant",
+      "order": 2,
       "company": "Calzados Florencia",
       "period": "Feb 2025 – Presente",
       "description_es": "Gestión de e-commerce, carga de productos y soporte digital. Implementación de campañas online para mejorar la presencia de marca.",
@@ -128,6 +130,7 @@
     "academic": {
       "title_es": "Proyectos Académicos",
       "title_en": "Academic Projects",
+      "order": 10,
       "company": "Universidad Técnica Nacional",
       "period": "2021 – 2024",
       "description_es": "Desarrollo de aplicaciones web bajo arquitectura MVC y metodologías ágiles, utilizando Java, PHP y MySQL.",
