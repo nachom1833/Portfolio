@@ -65,7 +65,7 @@
       "order": 1,
       "title_es": "MITO Gafas",
       "title_en": "MITO Glasses",
-      "img": "./imagenes/@mitogafas.png",
+      "img": "./imgenes/@mitogafas.png",
       "link": "https://mitogafas.com",
       "github": "https://github.com/nachom1833/mitogafas",
       "description_es": "Desarrollo de un e-commerce para ópticas con catálogo dinámico, filtros por categoría, integración de base de datos MySQL y diseño responsive. Incluye soporte continuo y carga masiva de productos.",
@@ -83,7 +83,7 @@
       "order": 3,
       "title_es": "Calzados Florencia",
       "title_en": "Florencia Shoes",
-      "img": "https://placehold.co/600x400/ffa07a/000?text=Calzados+Florencia",
+      "img": ".imgenes/calzadosFLorencia.png",
       "link": "https://calzadoflorencia.mitiendanube.com",
       "github": "",
       "description_es": "Configuración y personalización de e-commerce en TiendaNube, gestión de inventario y diseño adaptable. Se implementaron estrategias digitales para aumentar la visibilidad online.",
@@ -202,7 +202,7 @@
     },
     {
       "name": "Cliente MITO Gafas",
-      "role": "Dueño de mitogafas.com",
+      "role": "Dueño de mitogafas",
       "comment_es": "Excelente profesional, rápido y resolutivo. Siempre propone mejoras.",
       "comment_en": "Excellent professional, fast and solution-oriented. Always suggests improvements."
     }
@@ -213,19 +213,19 @@
       "name": "Diplomatura en Inteligencia Artificial",
       "institution": "UTNBA Centro de eLearning",
       "year": 2025,
-      "imageUrl": "https://example.com/url_del_certificado_ia.jpg"
+      "imageUrl": "./imgenes/imgProximamente.png"
     },
     {
       "name": "React JS",
       "institution": "Coderhouse",
       "year": 2024,
-      "imageUrl": "https://example.com/url_del_certificado_react.png"
+      "imageUrl": "./imgenes/certificadoCoderHouse.png"
     },
     {
       "name": "Full Stack Java",
       "institution": "Codo a Codo",
       "year": 2023,
-      "imageUrl": "https://example.com/url_del_certificado_java.jpg"
+      "imageUrl": "./imgenes/imgDiplomaCAC.png"
     }
   ],
   "goals": {
