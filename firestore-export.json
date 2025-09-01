@@ -19,7 +19,48 @@
       }
     }
   },
+"services": [
+  {
+    "title_es": "Desarrollo Web",
+    "title_en": "Web Development",
+    "description_es": "Creación de sitios web responsivos, optimizados para SEO y con experiencias interactivas modernas.",
+    "description_en": "Building responsive websites optimized for SEO with modern interactive experiences.",
+    "icon": "🌐"
+  },
+  {
+    "title_es": "Aplicaciones Full Stack",
+    "title_en": "Full Stack Applications",
+    "description_es": "Desarrollo de aplicaciones completas con back-end robusto y front-end dinámico.",
+    "description_en": "Developing full-stack applications with robust back-end and dynamic front-end.",
+    "icon": "💻"
+  },
+  {
+    "title_es": "E-commerce",
+    "title_en": "E-commerce",
+    "description_es": "Plataformas de venta online con pasarelas de pago, gestión de productos y análisis.",
+    "description_en": "Online sales platforms with payment gateways, product management, and analytics.",
+    "icon": "🛒"
+  }
+],
   "projects": {
+    "portfolio": {
+      "order": 0,
+      "title_es": "Portafolio Personal",
+      "title_en": "Personal Portfolio",
+      "img": "/images/portfolio-preview.jpg",
+      "link": "https://portfolio-neon-beta-53.vercel.app",
+      "github": "https://github.com/nachom1833/Portfolio",
+      "description_es": "Mi portafolio personal, donde muestro mis habilidades y proyectos. Construido con React y optimizado con Firebase para una gestión de contenido eficiente.",
+      "description_en": "My personal portfolio, where I showcase my skills and projects. Built with React and optimized with Firebase for efficient content management.",
+      "techs": [
+        "React",
+        "TailwindCSS",
+        "Firebase",
+        "TypeScript",
+        "Docker",
+        "Nginx"
+      ]
+    },
     "mito": {
       "order": 1,
       "title_es": "MITO Gafas",
@@ -38,22 +79,6 @@
         "Bootstrap"
       ]
     },
-    "ejemplo-proyecto-1": {
-      "order": 0,
-      "title_es": "Portafolio Personal",
-      "title_en": "Personal Portfolio",
-      "description_es": "Mi portafolio personal, donde muestro mis habilidades y proyectos. Construido con React y optimizado con Firebase para una gestión de contenido eficiente.",
-      "description_en": "My personal portfolio, where I showcase my skills and projects. Built with React and optimized with Firebase for efficient content management.",
-      "img": "/images/portfolio-preview.jpg",
-      "link": "https://tu-portfolio.com",
-      "github": "https://github.com/tu-usuario/tu-repositorio",
-      "techs": [
-        "React",
-        "TailwindCSS",
-        "Firebase",
-        "TypeScript"
-      ]
-    },
     "calzados": {
       "order": 3,
       "title_es": "Calzados Florencia",
@@ -69,131 +94,99 @@
         "CSS"
       ]
     },
-    "academic": {
-      "order": 10,
-      "title_es": "Proyectos Académicos",
-      "title_en": "Academic Projects",
-      "img": "https://placehold.co/600x400/c0c0c0/000?text=Academic+Projects",
-      "link": "",
-      "github": "https://github.com/nachom1833",
-      "description_es": "Aplicaciones web desarrolladas en la UTN utilizando Java, PHP y MySQL, aplicando arquitectura MVC y metodologías ágiles.",
-      "description_en": "Web applications developed at UTN using Java, PHP, and MySQL, applying MVC architecture and agile methodologies.",
+    "dual-technology": {
+      "order": 4,
+      "title_es": "Dual Technology",
+      "title_en": "Dual Technology",
+      "img": "https://placehold.co/600x400/8a2be2/fff?text=Dual+Technology",
+      "link": "https://github.com/nachom1833/Dual-Technology",
+      "github": "https://github.com/nachom1833/Dual-Technology",
+      "description_es": "Proyecto grupal para crear una página de ventas online, integrando base de datos y arquitectura en capas, desarrollado en ASP.NET con C#.",
+      "description_en": "Group project to create an online sales page, integrating database and layered architecture, developed in ASP.NET with C#.",
       "techs": [
-        "Java",
-        "PHP",
-        "MySQL",
-        "MVC"
+        "C#",
+        "ASP.NET",
+        "SQL Server"
+      ]
+    },
+    "proyecto-lab2": {
+      "order": 5,
+      "title_es": "Manipulación de Archivos (Lab 2)",
+      "title_en": "File Handling (Lab 2)",
+      "img": "https://placehold.co/600x400/ff8c00/fff?text=Lab+2+C++",
+      "link": "https://github.com/nachom1833/proyecto-lab2",
+      "github": "https://github.com/nachom1833/proyecto-lab2",
+      "description_es": "Proyecto individual donde se trabajó la manipulación de archivos utilizando C++ en CodeBlocks para la materia de Laboratorio 2.",
+      "description_en": "Individual project focused on file handling using C++ in CodeBlocks for the Lab 2 course.",
+      "techs": [
+        "C++",
+        "CodeBlocks"
+      ]
+    },
+    "generala": {
+      "order": 6,
+      "title_es": "Juego de la Generala",
+      "title_en": "Generala Game",
+      "img": "https://placehold.co/600x400/228b22/fff?text=Generala+C++",
+      "link": "https://github.com/nachom1833/Proyecyo_Generala",
+      "github": "https://github.com/nachom1833/Proyecyo_Generala",
+      "description_es": "Juego de la Generala desarrollado en C++ aplicando estructuras y funciones, creado como proyecto académico en la UTN.",
+      "description_en": "Generala game developed in C++ applying structures and functions, created as an academic project at UTN.",
+      "techs": [
+        "C++"
       ]
     }
   },
-  "skills": {
+  
+"skills": {
     "frontend": {
       "HTML5": 95,
       "CSS3": 90,
       "JavaScript (ES6+)": 85,
-      "React": 75
+      "React": 80,
+      "TailwindCSS": 85,
+      "Bootstrap": 80
     },
     "backend": {
       "PHP": 80,
-      "Java": 70,
-      "Node.js": 60
+      "Java": 75,
+      "Node.js": 70,
+      "Express.js": 65,
+      "C#": 70
     },
     "databases": {
       "MySQL": 85,
-      "SQL Server": 70,
-      "Firebase": 65
+      "SQL Server": 75,
+      "Firebase": 70
     },
     "tools": {
       "Git": 90,
-      "Docker": 60
-    }
-  },
-  "experiences": {
-    "freelanceMito": {
-      "title_es": "Desarrollador Full Stack",
-      "title_en": "Full Stack Developer",
-      "order": 1,
-      "company": "MITO Gafas",
-      "period": "Oct 2024 – Presente",
-      "description_es": "Diseño y desarrollo del sitio e-commerce con PHP, MySQL, JavaScript y Bootstrap. Implementación de filtros dinámicos, carga masiva de productos y mantenimiento continuo.",
-      "description_en": "Design and development of the e-commerce website using PHP, MySQL, JavaScript, and Bootstrap. Implemented dynamic filters, bulk product upload, and continuous maintenance."
+      "Docker": 65,
+      "CodeBlocks": 60,
+      "Visual Studio Code": 85,
+      "Trello": 70
     },
-    "calzadosFlorencia": {
-      "title_es": "Asistente Comercial & Digital",
-      "title_en": "Commercial & Digital Assistant",
-      "order": 2,
-      "company": "Calzados Florencia",
-      "period": "Feb 2025 – Presente",
-      "description_es": "Gestión de e-commerce, carga de productos y soporte digital. Implementación de campañas online para mejorar la presencia de marca.",
-      "description_en": "Managed e-commerce, product upload, and digital support. Implemented online campaigns to enhance brand visibility."
-    },
-    "academic": {
-      "title_es": "Proyectos Académicos",
-      "title_en": "Academic Projects",
-      "order": 10,
-      "company": "Universidad Técnica Nacional",
-      "period": "2021 – 2024",
-      "description_es": "Desarrollo de aplicaciones web bajo arquitectura MVC y metodologías ágiles, utilizando Java, PHP y MySQL.",
-      "description_en": "Developed web applications using MVC architecture and agile methodologies, working with Java, PHP, and MySQL."
+    "languages": {
+      "C++": 80,
+      "TypeScript": 75
     }
   },
   "contact_content": {
-    "es": {
-      "lang": "es",
-      "title": "Contacto",
-      "subtitle": "Estoy abierto a nuevas oportunidades de trabajo. Si tienes un proyecto en mente o simplemente quieres saludar, no dudes en contactarme.",
-      "form": {
-        "name": "Nombre",
-        "email": "Correo Electrónico",
-        "message": "Mensaje",
-        "send": "Enviar",
-        "sending": "Enviando..."
-      },
-      "status": {
-        "success": "¡Mensaje enviado con éxito!",
-        "error": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
-      }
+    "title": {
+      "es": "Contacto",
+      "en": "Contact"
     },
-    "en": {
-      "lang": "en",
-      "title": "Contact",
-      "subtitle": "I am open to new work opportunities. If you have a project in mind or just want to say hello, feel free to get in touch.",
-      "form": {
-        "name": "Name",
-        "email": "Email",
-        "message": "Message",
-        "send": "Send",
-        "sending": "Sending..."
-      },
-      "status": {
-        "success": "Message sent successfully!",
-        "error": "There was an error sending the message. Please try again later."
-      }
+    "description": {
+      "es": "Si quieres trabajar conmigo o tienes alguna pregunta, no dudes en contactarme.",
+      "en": "If you want to work with me or have any questions, feel free to contact me."
+    },
+    "links": {
+      "email": "mailto:ignacio.orco.dev@gmail.com",
+      "linkedin": "https://linkedin.com/in/ignacioorco",
+      "github": "https://github.com/nachom1833"
     }
-  },
-  "services": [
-    {
-      "title_es": "Desarrollo Web Full Stack",
-      "title_en": "Full Stack Web Development",
-      "description_es": "Creación de aplicaciones y sitios web responsivos, optimizados para rendimiento y SEO.",
-      "description_en": "Building responsive websites and web apps optimized for performance and SEO.",
-      "icon": "💻"
-    },
-    {
-      "title_es": "Integración de APIs y Bases de Datos",
-      "title_en": "API and Database Integration",
-      "description_es": "Conexión de aplicaciones con APIs externas y gestión eficiente de bases de datos.",
-      "description_en": "Connecting applications to external APIs and managing databases efficiently.",
-      "icon": "🔗"
-    },
-    {
-      "title_es": "Mantenimiento y Soporte Técnico",
-      "title_en": "Maintenance and Technical Support",
-      "description_es": "Actualización de sistemas, monitoreo y soporte continuo para aplicaciones en producción.",
-      "description_en": "System updates, monitoring, and continuous support for production applications.",
-      "icon": "🛠️"
-    }
-  ],
+  }
+,
   "social_links": {
     "github": "https://github.com/nachom1833",
     "linkedin": "https://www.linkedin.com/in/ignacio-orco",
@@ -214,27 +207,33 @@
       "comment_en": "Excellent professional, fast and solution-oriented. Always suggests improvements."
     }
   ],
+ 
   "certifications": [
     {
       "name": "Diplomatura en Inteligencia Artificial",
       "institution": "UTNBA Centro de eLearning",
-      "year": 2025
+      "year": 2025,
+      "imageUrl": "https://example.com/url_del_certificado_ia.jpg"
     },
     {
       "name": "React JS",
       "institution": "Coderhouse",
-      "year": 2024
+      "year": 2024,
+      "imageUrl": "https://example.com/url_del_certificado_react.png"
     },
     {
       "name": "Full Stack Java",
       "institution": "Codo a Codo",
-      "year": 2023
+      "year": 2023,
+      "imageUrl": "https://example.com/url_del_certificado_java.jpg"
     }
   ],
   "goals": {
-    "short_term_es": "Conseguir un trabajo remoto como desarrollador Full Stack para empresas globales.",
-    "short_term_en": "Get a remote Full Stack Developer job for global companies.",
-    "long_term_es": "Especializarme en Arquitectura de Software y proyectos de IA.",
-    "long_term_en": "Specialize in Software Architecture and AI projects."
+    "content": {
+      "short_term_es": "Conseguir un trabajo remoto como desarrollador Full Stack para empresas globales.",
+      "short_term_en": "Get a remote Full Stack Developer job for global companies.",
+      "long_term_es": "Especializarme en Arquitectura de Software y proyectos de IA.",
+      "long_term_en": "Specialize in Software Architecture and AI projects."
+    }
   }
 }

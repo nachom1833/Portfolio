@@ -13,33 +13,32 @@ const data = JSON.parse(fs.readFileSync("firestore-export.json", "utf8"));
 
 // Función principal para subir los datos
 async function uploadData() {
-  // Recorrer todas las colecciones raíz del JSON (about, contact, etc.)
+  // Recorrer todas las colecciones raíz del JSON
   for (const collectionName in data) {
     const collectionData = data[collectionName];
+    console.log(`✨ Procesando colección: ${collectionName}`);
 
-    // Verificar si los datos de la colección son un array
+    // Si la colección es un array, subimos cada item como un nuevo documento
     if (Array.isArray(collectionData)) {
-      console.log(`✨ Subiendo colección: ${collectionName}`);
       for (const item of collectionData) {
-        // Usar addDoc para documentos sin un ID específico
         await db.collection(collectionName).add(item);
         console.log(`📄 Documento añadido a ${collectionName}`);
       }
     } else if (typeof collectionData === "object" && collectionData !== null) {
-      // Si es un objeto, subirlo como documentos (ej. 'about', 'skills')
-      console.log(`✨ Subiendo colección: ${collectionName}`);
+      // Si la colección es un objeto, subimos cada par clave-valor como un documento
       for (const docId in collectionData) {
         let docData = collectionData[docId];
         
-        // Add this check to ensure data is a valid object
-        if (typeof docData !== 'object' || docData === null) {
-          // If the data is not an object, wrap it in one.
+        // Asegurarse de que el dato sea un objeto válido para Firestore
+        if (typeof docData !== "object" || docData === null) {
           docData = { value: docData };
         }
         
         await db.collection(collectionName).doc(docId).set(docData);
         console.log(`📄 Documento subido: ${collectionName}/${docId}`);
       }
+    } else {
+      console.log(`🚫 ${collectionName} no es un array ni un objeto, se omite.`);
     }
   }
 }
