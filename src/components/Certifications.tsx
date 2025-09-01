@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { db } from "../firebase/config";
 import { collection, onSnapshot } from "firebase/firestore";
+import { useAppContext } from "../context/AppContext";
 
 interface Certification {
   name: string;
@@ -26,11 +27,11 @@ export default function Certifications() {
 
     return () => unsubscribe();
   }, []);
-
+ const { language } = useAppContext();
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-10">Certificaciones</h2>
+        <h2 className="text-4xl font-bold text-center mb-10">  {language === "es" ? "Certificaciones" : "Certifications"}</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {certifications.map((cert, i) => (
             <motion.div
