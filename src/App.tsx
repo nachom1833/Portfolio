@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 // Lazy load de componentes
 const Hero = lazy(() => import("./components/Hero"));
+const Experience = lazy(() => import("./components/Experience"));
 const About = lazy(() => import("./components/About"));
 const Services = lazy(() => import("./components/Services"));
 const Projects = lazy(() => import("./components/Projects"));
@@ -27,6 +28,11 @@ function App() {
             <Hero />
           </motion.section>
 
+          {/* Experience */}
+          <motion.section id="experience" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+            <Experience />
+          </motion.section> 
+          
           {/* About */}
           <motion.section id="about" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <About />
