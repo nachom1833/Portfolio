@@ -14,7 +14,7 @@ const Certifications = lazy(() => import("./components/Certifications"));
 const Testimonials = lazy(() => import("./components/Testimonials"));
 const Goals = lazy(() => import("./components/Goals"));
 const Contact = lazy(() => import("./components/Contact"));
-const SocialLinks = lazy(() => import("./components/SocialLinks"));
+
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
           <motion.section id="experience" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Experience />
           </motion.section>
-          
+
           {/* Services */}
           <motion.section id="services" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Services />
@@ -72,7 +72,7 @@ function App() {
           {/* Contact */}
           <motion.section id="contact" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Contact />
-            {/* <SocialLinks /> */}
+       
           </motion.section>
 
         </Suspense>
