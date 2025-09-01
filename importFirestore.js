@@ -29,7 +29,14 @@ async function uploadData() {
       // Si es un objeto, subirlo como documentos (ej. 'about', 'skills')
       console.log(`✨ Subiendo colección: ${collectionName}`);
       for (const docId in collectionData) {
-        const docData = collectionData[docId];
+        let docData = collectionData[docId];
+        
+        // Add this check to ensure data is a valid object
+        if (typeof docData !== 'object' || docData === null) {
+          // If the data is not an object, wrap it in one.
+          docData = { value: docData };
+        }
+        
         await db.collection(collectionName).doc(docId).set(docData);
         console.log(`📄 Documento subido: ${collectionName}/${docId}`);
       }

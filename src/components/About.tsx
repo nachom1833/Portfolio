@@ -4,12 +4,11 @@ import { useAppContext } from "../context/AppContext";
 import { db } from "../firebase/config";
 import { doc, onSnapshot } from "firebase/firestore";
 
-// Interfaz para el documento completo (manteniendo objetos para idiomas)
 interface AboutContent {
-  title: { [key: string]: string };
-  p1: { [key: string]: string };
-  p2: { [key: string]: string };
-  p3: { [key: string]: string };
+  title?: { [key: string]: string };
+  p1?: { [key: string]: string };
+  p2?: { [key: string]: string };
+  p3?: { [key: string]: string };
 }
 
 export default function About() {
@@ -53,6 +52,11 @@ export default function About() {
     return <p className="text-center text-lg text-red-500">{error}</p>;
   }
 
+  const title = content?.title?.[language] ?? "";
+  const p1 = content?.p1?.[language] ?? "";
+  const p2 = content?.p2?.[language] ?? "";
+  const p3 = content?.p3?.[language] ?? "";
+
   return (
     <section id="about" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
@@ -62,7 +66,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900 dark:text-white"
         >
-          {content?.title[language] ?? ""}
+          {title}
         </motion.h2>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
@@ -85,9 +89,9 @@ export default function About() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
           >
-            <p className="mb-4">{content?.p1[language]}</p>
-            <p className="mb-4">{content?.p2[language]}</p>
-            <p className="mb-4">{content?.p3[language]}</p>
+            <p className="mb-4">{p1}</p>
+            <p className="mb-4">{p2}</p>
+            <p className="mb-4">{p3}</p>
           </motion.div>
         </div>
       </div>

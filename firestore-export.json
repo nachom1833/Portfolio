@@ -1,7 +1,5 @@
 {
-  "languages": ["es", "en"]
-,
-   "about": {
+  "about": {
     "content": {
       "title": {
         "es": "Sobre mí",
@@ -20,8 +18,7 @@
         "en": "My goal is to continue growing professionally in remote environments, building efficient and scalable digital products for global companies."
       }
     }
-  } 
-,
+  },
   "projects": {
     "mito": {
       "order": 1,
@@ -170,69 +167,71 @@
         "error": "There was an error sending the message. Please try again later."
       }
     }
-  },"services": [
-  {
-    "title_es": "Desarrollo Web Full Stack",
-    "title_en": "Full Stack Web Development",
-    "description_es": "Creación de aplicaciones y sitios web responsivos, optimizados para rendimiento y SEO.",
-    "description_en": "Building responsive websites and web apps optimized for performance and SEO.",
-    "icon": "💻"
   },
-  {
-    "title_es": "Integración de APIs y Bases de Datos",
-    "title_en": "API and Database Integration",
-    "description_es": "Conexión de aplicaciones con APIs externas y gestión eficiente de bases de datos.",
-    "description_en": "Connecting applications to external APIs and managing databases efficiently.",
-    "icon": "🔗"
+  "services": [
+    {
+      "title_es": "Desarrollo Web Full Stack",
+      "title_en": "Full Stack Web Development",
+      "description_es": "Creación de aplicaciones y sitios web responsivos, optimizados para rendimiento y SEO.",
+      "description_en": "Building responsive websites and web apps optimized for performance and SEO.",
+      "icon": "💻"
+    },
+    {
+      "title_es": "Integración de APIs y Bases de Datos",
+      "title_en": "API and Database Integration",
+      "description_es": "Conexión de aplicaciones con APIs externas y gestión eficiente de bases de datos.",
+      "description_en": "Connecting applications to external APIs and managing databases efficiently.",
+      "icon": "🔗"
+    },
+    {
+      "title_es": "Mantenimiento y Soporte Técnico",
+      "title_en": "Maintenance and Technical Support",
+      "description_es": "Actualización de sistemas, monitoreo y soporte continuo para aplicaciones en producción.",
+      "description_en": "System updates, monitoring, and continuous support for production applications.",
+      "icon": "🛠️"
+    }
+  ],
+  "social_links": {
+    "github": "https://github.com/nachom1833",
+    "linkedin": "https://www.linkedin.com/in/ignacio-orco",
+    "twitter": "https://twitter.com/tuusuario",
+    "email": "ignacioorco.dev@gmail.com"
   },
-  {
-    "title_es": "Mantenimiento y Soporte Técnico",
-    "title_en": "Maintenance and Technical Support",
-    "description_es": "Actualización de sistemas, monitoreo y soporte continuo para aplicaciones en producción.",
-    "description_en": "System updates, monitoring, and continuous support for production applications.",
-    "icon": "🛠️"
+  "testimonials": [
+    {
+      "name": "Marcelo vianna",
+      "role": "Dueño en Calzados Florencia",
+      "comment_es": "Ignacio ha sido clave para nuestra transformación digital, creando soluciones efectivas para el e-commerce.",
+      "comment_en": "Ignacio was key to our digital transformation, delivering effective e-commerce solutions."
+    },
+    {
+      "name": "Cliente MITO Gafas",
+      "role": "Dueño de mitogafas.com",
+      "comment_es": "Excelente profesional, rápido y resolutivo. Siempre propone mejoras.",
+      "comment_en": "Excellent professional, fast and solution-oriented. Always suggests improvements."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Diplomatura en Inteligencia Artificial",
+      "institution": "UTNBA Centro de eLearning",
+      "year": 2025
+    },
+    {
+      "name": "React JS",
+      "institution": "Coderhouse",
+      "year": 2024
+    },
+    {
+      "name": "Full Stack Java",
+      "institution": "Codo a Codo",
+      "year": 2023
+    }
+  ],
+  "goals": {
+    "short_term_es": "Conseguir un trabajo remoto como desarrollador Full Stack para empresas globales.",
+    "short_term_en": "Get a remote Full Stack Developer job for global companies.",
+    "long_term_es": "Especializarme en Arquitectura de Software y proyectos de IA.",
+    "long_term_en": "Specialize in Software Architecture and AI projects."
   }
-],"social_links": {
-  "github": "https://github.com/nachom1833",
-  "linkedin": "https://www.linkedin.com/in/ignacio-orco",
-  "twitter": "https://twitter.com/tuusuario",
-  "email": "ignacioorco.dev@gmail.com"
-},"testimonials": [
-  {
-    "name": "Marcelo vianna",
-    "role": "Dueño en Calzados Florencia",
-    "comment_es": "Ignacio ha sido clave para nuestra transformación digital, creando soluciones efectivas para el e-commerce.",
-    "comment_en": "Ignacio was key to our digital transformation, delivering effective e-commerce solutions."
-  },
-  {
-    "name": "Cliente MITO Gafas",
-    "role": "Dueño de mitogafas.com",
-    "comment_es": "Excelente profesional, rápido y resolutivo. Siempre propone mejoras.",
-    "comment_en": "Excellent professional, fast and solution-oriented. Always suggests improvements."
-  }
-],"certifications": [
-  {
-    "name": "Diplomatura en Inteligencia Artificial",
-    "institution": "UTNBA Centro de eLearning",
-    "year": 2025
-  },
-  {
-    "name": "React JS",
-    "institution": "Coderhouse",
-    "year": 2024
-  },
-  {
-    "name": "Full Stack Java",
-    "institution": "Codo a Codo",
-    "year": 2023
-  }
-],
-"goals": {
-  "short_term_es": "Conseguir un trabajo remoto como desarrollador Full Stack para empresas globales.",
-  "short_term_en": "Get a remote Full Stack Developer job for global companies.",
-  "long_term_es": "Especializarme en Arquitectura de Software y proyectos de IA.",
-  "long_term_en": "Specialize in Software Architecture and AI projects."
-}
-
-
 }
