@@ -19,29 +19,49 @@
       }
     }
   },
-"services": [
-  {
-    "title_es": "Desarrollo Web",
-    "title_en": "Web Development",
-    "description_es": "Creación de sitios web responsivos, optimizados para SEO y con experiencias interactivas modernas.",
-    "description_en": "Building responsive websites optimized for SEO with modern interactive experiences.",
-    "icon": "🌐"
-  },
-  {
-    "title_es": "Aplicaciones Full Stack",
-    "title_en": "Full Stack Applications",
-    "description_es": "Desarrollo de aplicaciones completas con back-end robusto y front-end dinámico.",
-    "description_en": "Developing full-stack applications with robust back-end and dynamic front-end.",
-    "icon": "💻"
-  },
-  {
-    "title_es": "E-commerce",
-    "title_en": "E-commerce",
-    "description_es": "Plataformas de venta online con pasarelas de pago, gestión de productos y análisis.",
-    "description_en": "Online sales platforms with payment gateways, product management, and analytics.",
-    "icon": "🛒"
-  }
-],
+  "services": [
+    {
+      "title_es": "Desarrollo Web",
+      "title_en": "Web Development",
+      "description_es": "Creación de sitios web responsivos, optimizados para SEO y con experiencias interactivas modernas.",
+      "description_en": "Building responsive websites optimized for SEO with modern interactive experiences.",
+      "icon": "🌐"
+    },
+    {
+      "title_es": "Aplicaciones Full Stack",
+      "title_en": "Full Stack Applications",
+      "description_es": "Desarrollo de aplicaciones completas con back-end robusto y front-end dinámico.",
+      "description_en": "Developing full-stack applications with robust back-end and dynamic front-end.",
+      "icon": "💻"
+    },
+    {
+      "title_es": "E-commerce",
+      "title_en": "E-commerce",
+      "description_es": "Plataformas de venta online con pasarelas de pago, gestión de productos y análisis.",
+      "description_en": "Online sales platforms with payment gateways, product management, and analytics.",
+      "icon": "🛒"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Mike",
+      "role_es": "Asistente IT",
+      "role_en": "IT Assistant",
+      "period_es": "Noviembre 2025 - Presente",
+      "period_en": "November 2025 - Present",
+      "description_es": "Automatización de procesos operativos y flujos de trabajo mediante el desarrollo de macros avanzadas en VBA y Excel. Optimización de la trazabilidad de productos estableciendo una estructura jerárquica de producción (niveles SE LVL1 y SE LVL2). Análisis de datos enfocado en la reducción de desperdicio de materiales y digitalización de procesos manuales.",
+      "description_en": "Operational process automation and workflow enhancement through advanced VBA and Excel development. Optimization of product traceability by establishing a hierarchical production structure (Levels SE LVL1 and SE LVL2). Data analysis focused on material waste reduction and digital transformation of manual workflows."
+    },
+    {
+      "company": "MitoGafas (@mitogafas)",
+      "role_es": "Desarrollador Full Stack",
+      "role_en": "Full Stack Developer",
+      "period_es": "Octubre 2024 - Presente",
+      "period_en": "October 2024 - Present",
+      "description_es": "Diseño y desarrollo integral de plataforma web comercial, gestionando Front-end, Back-end y diseño UI/UX desde su concepción. Implementación de filtros avanzados por categoría, arquitecturas de bases de datos relacionales complejas y sistemas de gestión automatizada de productos.",
+      "description_en": "Full-cycle design and development of a commercial web platform, managing Frontend, Backend, and UI/UX design from conception to implementation. Implementation of advanced category-based filtering, complex relational database architectures, and automated product management systems."
+    }
+  ],
   "projects": {
     "portfolio": {
       "order": 0,
@@ -137,8 +157,7 @@
       ]
     }
   },
-  
-"skills": {
+  "skills": {
     "frontend": {
       "HTML5": 95,
       "CSS3": 90,
@@ -185,8 +204,7 @@
       "linkedin": "https://linkedin.com/in/ignacioorco",
       "github": "https://github.com/nachom1833"
     }
-  }
-,
+  },
   "social_links": {
     "github": "https://github.com/nachom1833",
     "linkedin": "https://www.linkedin.com/in/ignacio-orco",
@@ -207,7 +225,6 @@
       "comment_en": "Excellent professional, fast and solution-oriented. Always suggests improvements."
     }
   ],
- 
   "certifications": [
     {
       "name": "Diplomatura en Inteligencia Artificial",
