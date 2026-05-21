@@ -248,7 +248,7 @@
       "name": "Diplomatura en Inteligencia Artificial",
       "institution": "UTNBA Centro de eLearning",
       "year": 2025,
-      "imageUrl": "./imgenes/imgProximamente.png"
+      "imageUrl": "./imgenes/Diplomatura_en_Inteligencia_Artificial.jpg"
     },
     {
       "name": "React JS",
@@ -261,6 +261,12 @@
       "institution": "Codo a Codo",
       "year": 2023,
       "imageUrl": "./imgenes/imgDiplomaCAC.png"
+    },
+    {
+      "name": "Diseño UI",
+      "institution": "Talento Tech",
+      "year": 2025,
+      "imageUrl": "./imgenes/imgDiplomaUi.png"
     }
   ],
   "goals": {

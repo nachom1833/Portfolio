@@ -20,6 +20,15 @@ async function uploadData() {
 
     // Si la colección es un array, subimos cada item como un nuevo documento
     if (Array.isArray(collectionData)) {
+      // Limpiar documentos existentes para evitar duplicados en cada ejecución
+      const snapshot = await db.collection(collectionName).get();
+      const batch = db.batch();
+      snapshot.docs.forEach((doc) => {
+        batch.delete(doc.ref);
+      });
+      await batch.commit();
+      console.log(`🗑️ Colección ${collectionName} vaciada para evitar duplicados.`);
+
       for (const item of collectionData) {
         await db.collection(collectionName).add(item);
         console.log(`📄 Documento añadido a ${collectionName}`);
