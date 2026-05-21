@@ -42,26 +42,44 @@
       "icon": "🛒"
     }
   ],
-  "experience": [
-    {
+  "experiences": {
+    "mikeIT": {
       "company": "Mike",
-      "role_es": "Asistente IT",
-      "role_en": "IT Assistant",
-      "period_es": "Noviembre 2025 - Presente",
-      "period_en": "November 2025 - Present",
+      "title_es": "Asistente IT",
+      "title_en": "IT Assistant",
+      "period": "Nov 2025 – Presente",
+      "order": 0,
       "description_es": "Automatización de procesos operativos y flujos de trabajo mediante el desarrollo de macros avanzadas en VBA y Excel. Optimización de la trazabilidad de productos estableciendo una estructura jerárquica de producción (niveles SE LVL1 y SE LVL2). Análisis de datos enfocado en la reducción de desperdicio de materiales y digitalización de procesos manuales.",
       "description_en": "Operational process automation and workflow enhancement through advanced VBA and Excel development. Optimization of product traceability by establishing a hierarchical production structure (Levels SE LVL1 and SE LVL2). Data analysis focused on material waste reduction and digital transformation of manual workflows."
     },
-    {
-      "company": "MitoGafas (@mitogafas)",
-      "role_es": "Desarrollador Full Stack",
-      "role_en": "Full Stack Developer",
-      "period_es": "Octubre 2024 - Presente",
-      "period_en": "October 2024 - Present",
+    "freelanceMito": {
+      "company": "MITO Gafas",
+      "title_es": "Desarrollador Full Stack",
+      "title_en": "Full Stack Developer",
+      "period": "Oct 2024 – Presente",
+      "order": 1,
       "description_es": "Diseño y desarrollo integral de plataforma web comercial, gestionando Front-end, Back-end y diseño UI/UX desde su concepción. Implementación de filtros avanzados por categoría, arquitecturas de bases de datos relacionales complejas y sistemas de gestión automatizada de productos.",
       "description_en": "Full-cycle design and development of a commercial web platform, managing Frontend, Backend, and UI/UX design from conception to implementation. Implementation of advanced category-based filtering, complex relational database architectures, and automated product management systems."
+    },
+    "calzadosFlorencia": {
+      "company": "Sum Max srl",
+      "title_es": "Asistente Comercial & Digital",
+      "title_en": "Commercial & Digital Assistant",
+      "period": "Feb 2025 – Presente",
+      "order": 2,
+      "description_es": "Gestión de e-commerce, carga de productos y soporte digital. Implementación de campañas online para mejorar la presencia de marca.",
+      "description_en": "Managed e-commerce, product upload, and digital support. Implemented online campaigns to enhance brand visibility."
+    },
+    "academic": {
+      "company": "Universidad Técnica Nacional",
+      "title_es": "Proyectos Académicos",
+      "title_en": "Academic Projects",
+      "period": "2021 – 2024",
+      "order": 10,
+      "description_es": "Desarrollo de aplicaciones web bajo arquitectura MVC y metodologías ágiles, utilizando Java, PHP y MySQL.",
+      "description_en": "Developed web applications using MVC architecture and agile methodologies, working with Java, PHP, and MySQL."
     }
-  ],
+  },
   "projects": {
     "portfolio": {
       "order": 0,
@@ -209,7 +227,7 @@
     "github": "https://github.com/nachom1833",
     "linkedin": "https://www.linkedin.com/in/ignacio-orco",
     "twitter": "https://twitter.com/tuusuario",
-    "email": "ignacioorco.dev@gmail.com"
+    "email": "ignacioorco@gmail.com"
   },
   "testimonials": [
     {

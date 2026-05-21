@@ -49,10 +49,10 @@ function App() {
             <Projects />
           </motion.section>
 
-          {/* Skills */}
+          {/* Skills
           <motion.section id="skills" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Skills />
-          </motion.section>
+          </motion.section>*/}
 
           {/* Certifications */}
           <motion.section id="certifications" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
