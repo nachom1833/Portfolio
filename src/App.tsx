@@ -9,7 +9,7 @@ const Experience = lazy(() => import("./components/Experience"));
 const About = lazy(() => import("./components/About"));
 const Services = lazy(() => import("./components/Services"));
 const Projects = lazy(() => import("./components/Projects"));
-const Skills = lazy(() => import("./components/Skills"));
+// const Skills = lazy(() => import("./components/Skills"));
 const Certifications = lazy(() => import("./components/Certifications"));
 const Testimonials = lazy(() => import("./components/Testimonials"));
 const Goals = lazy(() => import("./components/Goals"));
@@ -52,7 +52,7 @@ function App() {
           {/* Skills
           <motion.section id="skills" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Skills />
-          </motion.section>*/}
+          </motion.section> */}
 
           {/* Certifications */}
           <motion.section id="certifications" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>

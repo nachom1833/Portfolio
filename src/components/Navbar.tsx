@@ -15,7 +15,7 @@ export default function Navbar() {
     { href: "#about", label: language === "es" ? "Sobre mí" : "About" },
     { href: "#experience", label: language === "es" ? "Experiencia" : "Experience" },
     { href: "#projects", label: language === "es" ? "Proyectos" : "Projects" },
-    { href: "#skills", label: language === "es" ? "Habilidades" : "Skills" },
+    // { href: "#skills", label: language === "es" ? "Habilidades" : "Skills" },
     { href: "#certifications", label: language === "es" ? "Certificaciones" : "Certifications" },
     { href: "#testimonials", label: language === "es" ? "Testimonios" : "Testimonials" },
     { href: "#contact", label: language === "es" ? "Contacto" : "Contact" },
