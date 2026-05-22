@@ -82,10 +82,10 @@
   },
   "projects": {
     "portfolio": {
-      "order": 0,
+      "order": 3,
       "title_es": "Portafolio Personal",
       "title_en": "Personal Portfolio",
-      "img": "/images/portfolio.jpg",
+      "img": "./imgenes/portfolio.png",
       "link": "https://portfolio-ignacioorcobarberis.vercel.app/",
       "github": "https://github.com/nachom1833/Portfolio",
       "description_es": "Mi portafolio personal, donde muestro mis habilidades y proyectos. Construido con React y optimizado con Firebase para una gestión de contenido eficiente.",
@@ -99,8 +99,23 @@
         "Nginx"
       ]
     },
+    "bemarketing": {
+  "order": 1,
+  "title_es": "BE Marketing",
+  "title_en": "BE Marketing",
+  "img": "./imgenes/logobemarketing.jpeg",
+  "link": "",
+  "github": "https://github.com/nachom1833/BEmarketing",
+  "description_es": "Desarrollo de sitio web y plataforma para agencia de marketing. Diseño de interfaz UI/UX, optimización de SEO y creación de componentes interactivos.",
+  "description_en": "Website and platform development for a marketing agency. UI/UX interface design, SEO optimization, and creation of interactive components.",
+  "techs": [
+    "React",
+    "Next.js",
+    "Tailwind CSS"
+  ]
+},
     "mito": {
-      "order": 1,
+      "order": 0,
       "title_es": "MITO Gafas",
       "title_en": "MITO Glasses",
       "img": "./imgenes/@mitogafas.png",
@@ -118,7 +133,7 @@
       ]
     },
     "calzados": {
-      "order": 3,
+      "order": 4,
       "title_es": "Calzados Florencia",
       "title_en": "Florencia Shoes",
       "img": "./imgenes/logocalzflorencia.png",
@@ -133,7 +148,7 @@
       ]
     },
     "dual-technology": {
-      "order": 4,
+      "order": 5,
       "title_es": "Dual Technology",
       "title_en": "Dual Technology",
       "img": "https://placehold.co/600x400/8a2be2/fff?text=Dual+Technology",
@@ -148,7 +163,7 @@
       ]
     },
     "proyecto-lab2": {
-      "order": 5,
+      "order": 6,
       "title_es": "Manipulación de Archivos (Lab 2)",
       "title_en": "File Handling (Lab 2)",
       "img": "https://placehold.co/600x400/ff8c00/fff?text=Lab+2+C++",
@@ -162,7 +177,7 @@
       ]
     },
     "generala": {
-      "order": 6,
+      "order": 7,
       "title_es": "Juego de la Generala",
       "title_en": "Generala Game",
       "img": "https://placehold.co/600x400/228b22/fff?text=Generala+C++",
