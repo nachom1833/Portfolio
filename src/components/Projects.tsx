@@ -82,46 +82,81 @@ export default function Projects() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.2 }}
-                  className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+                  className="group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 flex flex-col h-full"
                 >
-                  {/* Imagen del proyecto */}
-                  <img
-                    src={project.img}
-                    alt={language === "es" ? project.title_es : project.title_en}
-                    className="w-full h-auto object-cover rounded-lg mb-4"
-                  />
+                  {/* Contenedor Técnico (Terminal / IDE) para la Imagen del Proyecto */}
+                  <div className="relative w-full h-48 sm:h-52 md:h-56 overflow-hidden rounded-lg mb-6 bg-slate-950 border border-slate-200/80 dark:border-slate-800 flex flex-col">
+                    {/* Barra superior estilo Terminal */}
+                    <div className="flex items-center justify-between px-4 py-2.5 bg-slate-900 border-b border-slate-200/10 dark:border-slate-800/80 text-[10px] sm:text-xs font-mono text-slate-400 select-none">
+                      <div className="flex items-center space-x-2">
+                        <span className="text-teal-400 font-bold">&gt;_</span>
+                        <span className="text-slate-300 tracking-tight">
+                          {(language === "es" ? project.title_es : project.title_en).toLowerCase().replace(/\s+/g, '-')}.sh
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className={`w-2 h-2 rounded-full ${project.link ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'} `} />
+                        <span className="text-[9px] text-slate-400 font-semibold uppercase tracking-wider">
+                          {project.link ? (language === "es" ? "Desplegado" : "Deployed") : "GitHub"}
+                        </span>
+                      </div>
+                    </div>
+                    {/* Contenedor de Imagen con Fondo de Rejilla de Ingeniería */}
+                    <div 
+                      className="relative flex-1 w-full overflow-hidden flex items-center justify-center bg-slate-50/5 dark:bg-slate-950"
+                      style={{ 
+                        backgroundImage: 'radial-gradient(rgba(20, 184, 166, 0.08) 1.5px, transparent 1.5px)', 
+                        backgroundSize: '16px 16px' 
+                      }}
+                    >
+                      <img
+                        src={project.img}
+                        alt={language === "es" ? project.title_es : project.title_en}
+                        className={`w-full h-full ${
+                          project.img.includes('logo') || project.img.includes('@')
+                            ? 'object-contain p-8'
+                            : 'object-cover object-top'
+                        } group-hover:scale-105 transition-transform duration-500 ease-out`}
+                        loading="lazy"
+                      />
+                      {/* Sutil overlay de degradado para profundidad */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
+                    </div>
+                  </div>
 
                   {/* Título y descripción */}
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                    {language === "es" ? project.title_es : project.title_en}
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                    {language === "es" ? project.description_es : project.description_en}
-                  </p>
+                  <div className="flex-grow flex flex-col">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-teal-500 transition-colors duration-300">
+                      {language === "es" ? project.title_es : project.title_en}
+                    </h3>
+                    <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed text-sm">
+                      {language === "es" ? project.description_es : project.description_en}
+                    </p>
 
-                  {/* Tecnologías */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.techs.map((tech) => (
-                      <span
-                        key={tech}
-                        className="bg-teal-100 text-teal-800 text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-teal-900 dark:text-teal-300"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                    {/* Tecnologías */}
+                    <div className="flex flex-wrap gap-2 mb-6 mt-auto pt-4">
+                      {project.techs.map((tech) => (
+                        <span
+                          key={tech}
+                          className="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-teal-900/40 dark:text-teal-300 border border-teal-200/50 dark:border-teal-800/30"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
                   {/* Enlaces a GitHub y al sitio web */}
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 border-t border-gray-100 dark:border-gray-700/30 pt-4 mt-auto">
                     {project.link && (
                       <a
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center space-x-2 text-teal-600 hover:text-teal-400 dark:text-teal-400 dark:hover:text-teal-300 transition-colors duration-300"
+                        className="flex items-center space-x-2 text-teal-600 hover:text-teal-400 dark:text-teal-400 dark:hover:text-teal-300 font-semibold text-sm transition-colors duration-300"
                         aria-label={language === "es" ? "Ver sitio web" : "View website"}
                       >
-                        <FiExternalLink className="text-xl" />
+                        <FiExternalLink className="text-lg" />
                         <span>{language === "es" ? "Ver Sitio" : "View Site"}</span>
                       </a>
                     )}
@@ -130,10 +165,10 @@ export default function Projects() {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors duration-300"
+                        className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white font-semibold text-sm transition-colors duration-300"
                         aria-label="Ver en GitHub"
                       >
-                        <FaGithub className="text-xl" />
+                        <FaGithub className="text-lg" />
                         <span>GitHub</span>
                       </a>
                     )}
